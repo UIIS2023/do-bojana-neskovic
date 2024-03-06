@@ -23,7 +23,7 @@ jobs:
       - name: Compile Java project
         run: |
           mkdir -p IT02- 2017-Neskovic-Bojana/bin
-          javac -d IT02- 2017-Neskovic-Bojana/bin -cp "IT02- 2017-Neskovic-Bojana/lib/heksagon.jar" $(find DizajnerskiObrasci/src -name "*.java")
+          javac -d IT02- 2017-Neskovic-Bojana/bin -cp "IT02- 2017-Neskovic-Bojana/lib/heksagon.jar" $(find IT02- 2017-Neskovic-Bojana/src -name "*.java")
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
